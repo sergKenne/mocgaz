@@ -8,6 +8,9 @@ h1,h2,h3,h4,h5 {
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+}
 
 html {
     font-size: 16px;
@@ -30,10 +33,43 @@ body {
     max-width: 1296px;
      margin: 0 auto;
      padding: 0 10px;
+     @media only screen and (max-width: 1200px) {
+         width: 95%;
+     }
+     
+
 }
 .header {
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 550px) {
+        flex-direction: column;
+    }
     &__logo {
         margin-top: 20px;
+    }
+    &__description {
+        margin-left: auto;
+        padding-top: 8px;
+        @media only screen and (max-width: 550px) {
+            margin-left: 0;
+            margin-top: 25px;
+        }
+    }
+    &__description-text {
+        color: #fff;
+        font-size: 12px;
+        margin-bottom: 4px;
+        text-align: right;
+        @media only screen and (max-width: 550px) {
+            text-align: left;
+        }
+        &:first-child {
+            font-size: 15px;
+        }
+        &:nth-child(2) {
+            color: #fbc10a;
+        }
     }
 }
 
@@ -47,8 +83,74 @@ body {
         color: #fff;
         margin-bottom: 20px;
     }
-    &__form {
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        @media only screen and (max-width: 650px) {
+            flex-direction: column;
+        }
+    }
+    &__content-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 13px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #fff;
         
+        span {
+            margin-left: 10px;
+        }
+    }
+    &__left-content {
+        //flex: 0 0 366px;
+        flex: .3;
+        margin-right: 30px;
+        @media only screen and (max-width: 650px) {
+            margin-right: 0;
+        }
+    }
+    &__right-content {
+        flex: .7;
+        @media only screen and (max-width: 650px) {
+            display: none;
+        }
+    }
+    &__content-list {
+        margin-bottom: 30px;
+    }
+    &__content-item {
+        margin-bottom: 10px;
+    }
+    &__content-link {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        // width: 366px;
+        height: 48px;
+        border-radius: 4px;
+        background-color: #2e5ba9;
+        &:hover {
+            background-color: #1c6efd;
+        }
+        &--right {
+            background-color: #288754;
+            &:hover {
+                background-color: #288754;
+            }
+        }
+        &--out {
+            background-color: transparent;
+            border: solid 1px #fbc10a;
+            color:#fbc10a;
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+    &__content-icon {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -266,4 +368,10 @@ body {
 }
 
 
+.activ-bg {
+    background-color: #1c6efd;
+}
 
+.show {
+    display: block;
+}

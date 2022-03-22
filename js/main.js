@@ -93,9 +93,6 @@ $(document).ready(function () {
     });
 
 
-
-    
-
     $('.file-icon-close').click(function (event) {
         event.stopPropagation();
         $(this).prev('.validate').removeClass('valid');
@@ -110,4 +107,28 @@ $(document).ready(function () {
         e.preventDefault();
         $('.modal-page').slideUp();
     });
+
+
+    let elts = $('.main__left-content .main__content-link');
+    Array.from(elts).forEach(elt => {
+        $(elt).click(function (e) {
+            e.preventDefault();
+            elts.removeClass('activ-bg');
+            if (!$('.main__right-content').hasClass('show')) {
+                console.log("ok");
+                $(this).addClass('activ-bg');
+            } else {
+                $(this).removeClass('activ-bg');
+            }
+            
+            $('.main__right-content').toggleClass('show');
+
+            if ($(this).hasClass('main__content-link--out')) {
+                elts.removeClass('activ-bg');
+                $('.main__right-content').removeClass('show');
+            }
+        })
+    });
+
+   
 });
