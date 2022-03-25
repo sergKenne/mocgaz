@@ -2,95 +2,96 @@
 
 $(document).ready(function () {
     M.updateTextFields();
-    $('.datepicker.date1').datepicker({
-        format: 'dd.mm.yyyy',
-        i18n: {
-            months: [
-                'Январь',
-                'Февраль',
-                'Март',
-                'Апрель',
-                'Май',
-                'Июнь',
-                'Июль',
-                'Август',
-                'Сентябрь',
-                'Октябрь',
-                'Ноябрь',
-                'Декабрь',
-            ],
-            monthsShort: [
-                'Янв',
-                'Фев',
-                'Мар',
-                'Апр',
-                'Май',
-                'Июн',
-                'Июл',
-                'Авг',
-                'Сен',
-                'Окт',
-                'Ноя',
-                'Дек',
-            ],
-            weekdays: [
-                'Воскресенье',
-                'Понедельник',
-                'Вторник',
-                'Среда',
-                'Четверг',
-                'Пятница',
-                'Суббота',
-            ],
-            weekdaysShort: ['Вск', 'Пнд', 'Втр', 'Срд', 'Чтв', 'Птн', 'Сбт'],
-            weekdaysAbbrev: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-        },
-    });
+    $('select').formSelect();
+    // $('.datepicker.date1').datepicker({
+    //     format: 'dd.mm.yyyy',
+    //     i18n: {
+    //         months: [
+    //             'Январь',
+    //             'Февраль',
+    //             'Март',
+    //             'Апрель',
+    //             'Май',
+    //             'Июнь',
+    //             'Июль',
+    //             'Август',
+    //             'Сентябрь',
+    //             'Октябрь',
+    //             'Ноябрь',
+    //             'Декабрь',
+    //         ],
+    //         monthsShort: [
+    //             'Янв',
+    //             'Фев',
+    //             'Мар',
+    //             'Апр',
+    //             'Май',
+    //             'Июн',
+    //             'Июл',
+    //             'Авг',
+    //             'Сен',
+    //             'Окт',
+    //             'Ноя',
+    //             'Дек',
+    //         ],
+    //         weekdays: [
+    //             'Воскресенье',
+    //             'Понедельник',
+    //             'Вторник',
+    //             'Среда',
+    //             'Четверг',
+    //             'Пятница',
+    //             'Суббота',
+    //         ],
+    //         weekdaysShort: ['Вск', 'Пнд', 'Втр', 'Срд', 'Чтв', 'Птн', 'Сбт'],
+    //         weekdaysAbbrev: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+    //     },
+    // });
 
-    $('.datepicker.date2').datepicker({
-        format: 'dd.mm.yyyy',
-        i18n: {
-            months: [
-                'Январь',
-                'Февраль',
-                'Март',
-                'Апрель',
-                'Май',
-                'Июнь',
-                'Июль',
-                'Август',
-                'Сентябрь',
-                'Октябрь',
-                'Ноябрь',
-                'Декабрь',
-            ],
-            monthsShort: [
-                'Янв',
-                'Фев',
-                'Мар',
-                'Апр',
-                'Май',
-                'Июн',
-                'Июл',
-                'Авг',
-                'Сен',
-                'Окт',
-                'Ноя',
-                'Дек',
-            ],
-            weekdays: [
-                'Воскресенье',
-                'Понедельник',
-                'Вторник',
-                'Среда',
-                'Четверг',
-                'Пятница',
-                'Суббота',
-            ],
-            weekdaysShort: ['Вск', 'Пнд', 'Втр', 'Срд', 'Чтв', 'Птн', 'Сбт'],
-            weekdaysAbbrev: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-        },
-    });
+    // $('.datepicker.date2').datepicker({
+    //     format: 'dd.mm.yyyy',
+    //     i18n: {
+    //         months: [
+    //             'Январь',
+    //             'Февраль',
+    //             'Март',
+    //             'Апрель',
+    //             'Май',
+    //             'Июнь',
+    //             'Июль',
+    //             'Август',
+    //             'Сентябрь',
+    //             'Октябрь',
+    //             'Ноябрь',
+    //             'Декабрь',
+    //         ],
+    //         monthsShort: [
+    //             'Янв',
+    //             'Фев',
+    //             'Мар',
+    //             'Апр',
+    //             'Май',
+    //             'Июн',
+    //             'Июл',
+    //             'Авг',
+    //             'Сен',
+    //             'Окт',
+    //             'Ноя',
+    //             'Дек',
+    //         ],
+    //         weekdays: [
+    //             'Воскресенье',
+    //             'Понедельник',
+    //             'Вторник',
+    //             'Среда',
+    //             'Четверг',
+    //             'Пятница',
+    //             'Суббота',
+    //         ],
+    //         weekdaysShort: ['Вск', 'Пнд', 'Втр', 'Срд', 'Чтв', 'Птн', 'Сбт'],
+    //         weekdaysAbbrev: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+    //     },
+    // });
 
 
     $('.file-icon-close').click(function (event) {
@@ -109,26 +110,22 @@ $(document).ready(function () {
     });
 
 
-    let elts = $('.main__left-content .main__content-link');
-    Array.from(elts).forEach(elt => {
-        $(elt).click(function (e) {
-            e.preventDefault();
-            elts.removeClass('activ-bg');
-            if (!$('.main__right-content').hasClass('show')) {
-                console.log("ok");
-                $(this).addClass('activ-bg');
-            } else {
-                $(this).removeClass('activ-bg');
-            }
-            
-            $('.main__right-content').toggleClass('show');
+   
+    if ($(window).width() <= 620) {
+        $('.main__content-link--first').click(function () {
+            $(this).next('.main__right-content').slideToggle();
+        });
+    }
 
-            if ($(this).hasClass('main__content-link--out')) {
-                elts.removeClass('activ-bg');
-                $('.main__right-content').removeClass('show');
-            }
-        })
-    });
+       
+        // $('.main__content-link--first').click(function () {
+        //      if ($(window).width() <= 620) {
+        //          $(this).next('.main__right-content').slideToggle();
+        //     }     
+        // });
+    
+    
+
 
    
 });

@@ -25,9 +25,15 @@
                         <h4 class="form__group-title">
                             Дата ввода первого компонента <span class="form__group-star">*</span>
                         </h4>
-                        <div class="input-field form__group-item">
+                        <!-- <div class="input-field form__group-item">
                             <input placeholder="дд.мм.гггг" class="datepicker date1" id="date1" type="text">
                             <label class="form__group-label" for="date1"><span>Дата</span> <i class="material-icons form__date-icon">date_range</i></label> 
+                        </div> -->
+
+                        <div class="input-field form__group-item">
+                            <input type="date" id="date1" placeholder="дд.мм.гггг">
+                            <label class="form__group-label" for="date1"><span>Дата</span> </label> 
+                            <i class="material-icons form__date-icon">date_range</i>
                         </div>
                     </div>
                     <div class="form__group">
@@ -35,8 +41,9 @@
                             Дата ввода второго компонента <span class="form__group-star">*</span>
                         </h4>
                         <div class="input-field form__group-item">
-                            <input placeholder="дд.мм.гггг" class="datepicker date2" id="date2" type="text">
-                            <label class="form__group-label" for="date2"><span>Дата</span> <i class="material-icons form__date-icon">date_range</i></label> 
+                            <input type="date" id="date" placeholder="дд.мм.гггг">
+                            <label class="form__group-label" for="date"><span>Дата</span> </label>
+                            <i class="material-icons form__date-icon">date_range</i>
                         </div>
                     </div>
                     <div class="form__group">
@@ -44,7 +51,12 @@
                             Введите название медучреждения, где проходили вакцинацию <span class="form__group-star">*</span>
                         </h4>
                         <div class="input-field form__group-item form__group-item--text">
-                            <input placeholder="" id="" type="text" class="validate">
+                            <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            </select>
                         </div>
                     </div>
                     <div class="form__group">
@@ -66,6 +78,7 @@
                     <button class="waves-effect waves-light btn form__btn">Далее</button>
                 </form>
             </div>
+            
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
