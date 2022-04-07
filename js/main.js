@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
     M.updateTextFields();
     $('select').formSelect();
@@ -93,39 +91,34 @@ $(document).ready(function () {
     //     },
     // });
 
-
     $('.file-icon-close').click(function (event) {
         event.stopPropagation();
         $(this).prev('.validate').removeClass('valid');
     });
 
-    $(".question").click(function (e) {
-        e.preventDefault()
-        $('.modal-page').slideDown()
-    })
+    $('.question').click(function (e) {
+        e.preventDefault();
+        $('.modal-page').slideDown();
+    });
 
     $('.modal-page__btn, .modal-page__icon-close').click(function (e) {
         e.preventDefault();
         $('.modal-page').slideUp();
     });
 
-
-   
     if ($(window).width() <= 620) {
-        $('.main__content-link--first').click(function () {
-            $(this).next('.main__right-content').slideToggle();
-        });
+        $('.main__right-content').slideDown();
+
+        /* $('.main__content-link--first').click(function () {
+			
+            if ($(".main__right-content").is(":visible")) {
+                $(this).next('.main__right-content').slideUp();
+                $(this).removeClass('activ-bg');
+            } else {
+                $(this).next('.main__right-content').slideDown();
+                
+                $(this).addClass("activ-bg")
+            }
+        });*/
     }
-
-       
-        // $('.main__content-link--first').click(function () {
-        //      if ($(window).width() <= 620) {
-        //          $(this).next('.main__right-content').slideToggle();
-        //     }     
-        // });
-    
-    
-
-
-   
 });
